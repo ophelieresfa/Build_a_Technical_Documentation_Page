@@ -8,14 +8,23 @@
   <section id="The_basics:_Headings_and_Paragraphs" class="main-section">
     <header>The basics: Headings and Paragraphs</header>
     <p>Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:</p>
+    <ul>
+      <li>header</li>
+    </ul>
     <pre>
       <code>&#60;header&#62;</code>
     </pre>
     <p>Usually a big strip across the top with a big heading and/or logo. This is where the main common information about a website usually stays from one webpage to another.</p>
+    <ul>
+      <li>navigation bar</li>
+    </ul>
     <pre>
       <code>&#60;nav&#62;</code>
     </pre>
     <p>Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having an inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than a individual component, but that's not a requirement; in fact some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</p>
+    <ul>
+      <li>main content</li>
+    </ul>
     <pre>
       <code>&#60;main&#62;</code>
     </pre>
@@ -28,10 +37,16 @@
       </code>
     </pre>
     <p>A big area in the center that contains most of the unique content of a given webpage, for example the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!</p>
+    <ul>
+      <li>sidebar</li>
+    </ul>
     <pre>
       <code>&#60;aside&#62;</code>
     </pre>
     <p>Some peripheral info, links, quotes, ads, etc. Usually this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.</p>
+    <ul>
+      <li>footer</li>
+    </ul>
     <pre>
       <code>&#60;footer&#62;</code>
     </pre>
@@ -57,6 +72,15 @@
       </code>
     </pre>
     <p>It's easy to throw links up on your page. That's not enough. We need to make our links accessible to all readers, regardless of their current context and which tools they prefer. For example:</p>
+    <ul>
+      <li>Screenreader users like jumping around from link to link on the page, and reading links out of context.</li>
+      <li>Search engines use link text to index target files, so it is a good idea to include keywords in your link text to effectively describe what is being linked to.</li>
+      <li>Visual readers skim over the page rather than reading every word, and their eyes will be drawn to page features that stand out, like links. They will find descriptive link text useful.</li>
+      <li>Don't repeat the URL as part of the link text — URLs look ugly, and sound even uglier when a screen reader reads them out letter by letter.</li>
+      <li>Don't say "link" or "links to" in the link text — it's just noise. Screen readers tell people there's a link. Visual users will also know there's a link, because links are generally styled in a different colour and underlined (this convention generally shouldn't be broken, as users are so used to it.)</li>
+      <li>Keep your link label as short as possible — long links especially annoy screen reader users, who have to hear the whole thing read out.</li>
+      <li>Minimize instances where multiple copies of the same text are linked to different places. This can cause problems for screenreader users, who will often bring up a list of the links out of context — several links all labelled "click here", "click here", "click here" would be confusing.</li>
+    </ul>
   </section>
 
   <section id="HTML_comments" class="main-section">
@@ -72,5 +96,8 @@
 
   <section id="Reference" class="main-section">
     <header>Reference</header>
+    <ul>
+      <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/fr/" target="_blank">MDN</a></li>
+    </ul>
   </section> 
 </main>
