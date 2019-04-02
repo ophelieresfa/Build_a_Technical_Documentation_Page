@@ -31,3 +31,22 @@ body {
   text-decoration: none;
   color: black;
 }
+
+#main-doc {
+  margin-left: 420px;
+  padding-top: 10px;
+  color: #4d4e53;
+  width: 68%;
+  text-align: justify;
+}
+
+#main-doc header {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 0px;
+  color: black;
+}
+
+#main-doc li {
+  padding: 10px;
+}
