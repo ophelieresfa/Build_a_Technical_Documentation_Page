@@ -87,4 +87,10 @@ h2 {
   #navbar li:first-child {
     border-top: none;
   }
+  
+  #main-doc {
+  	margin-left: 40px;
+  	width: 90%;
+  	text-align: justify;
+  }
 }
