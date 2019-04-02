@@ -70,5 +70,21 @@ h2 {
 }
 
 @media screen and (max-width: 815px) {
-	
+	#navbar {
+    position: relative;
+    width: 102.5%;
+    background-color: white;
+    height: 340px;
+    border-bottom: 3px solid gray;
+    border-right: none;
+    margin-left: -10px;
+  }
+  
+  #navbar ul {
+        border-top: 3px solid gray;
+  }
+  
+  #navbar li:first-child {
+    border-top: none;
+  }
 }
