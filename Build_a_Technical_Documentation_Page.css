@@ -68,3 +68,7 @@ h2 {
 #Reference a {
   color: #003ff4;
 }
+
+@media screen and (max-width: 815px) {
+	
+}
