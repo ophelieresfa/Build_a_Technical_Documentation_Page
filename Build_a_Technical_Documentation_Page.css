@@ -1,3 +1,33 @@
 body {
   font-family: sans-serif;
 }
+
+#navbar {
+  position: fixed;
+  border-right: 3px solid gray;
+  width: 350px;
+  height: 110%;
+  margin-top: -20px;
+}
+
+#navbar header {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin-left: -48px;
+}
+
+#navbar li {
+  padding-left: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid black
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
