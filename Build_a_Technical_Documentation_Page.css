@@ -59,3 +59,8 @@ pre {
 code {
   color: #4d4e53;
 }
+
+h2 {
+  text-decoration: underline;
+  color: #882550;
+}
