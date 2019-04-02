@@ -8,18 +8,54 @@
   <section id="The_basics:_Headings_and_Paragraphs" class="main-section">
     <header>The basics: Headings and Paragraphs</header>
     <p>Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:</p>
+    <pre>
+      <code>&#60;header&#62;</code>
+    </pre>
     <p>Usually a big strip across the top with a big heading and/or logo. This is where the main common information about a website usually stays from one webpage to another.</p>
+    <pre>
+      <code>&#60;nav&#62;</code>
+    </pre>
     <p>Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having an inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than a individual component, but that's not a requirement; in fact some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</p>
+    <pre>
+      <code>&#60;main&#62;</code>
+    </pre>
     <p>with various content subsections represented by:</p>
+    <pre>
+      <code>
+        &#60;article&#62;
+        &#60;section&#62; 
+        &#60;div&#62;
+      </code>
+    </pre>
     <p>A big area in the center that contains most of the unique content of a given webpage, for example the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!</p>
+    <pre>
+      <code>&#60;aside&#62;</code>
+    </pre>
     <p>Some peripheral info, links, quotes, ads, etc. Usually this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.</p>
+    <pre>
+      <code>&#60;footer&#62;</code>
+    </pre>
     <p>A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually that information is not critical or secondary to the website itself. The footer is also sometimes used for SEO purposes, by providing links for quick access to popular content</p>
   </section>
 
   <section id="Creating_hyperlinks" class="main-section">
     <header>Creating hyperlinks</header>
     <p>A basic link is created by wrapping the text (or other content, see Block level links) you want to turn into a link inside an &#60;a&#62; element, and giving it an href attribute (also known as a Hypertext Reference , or target) that will contain the web address you want the link to point to.</p>
+    <pre>
+      <code>&#60;p&#62;I'm creating a link to
+        &#60;a href="https://www.mozilla.org/en-US/"&#62;the Mozilla homepage&#60;/a&#62;.
+      &#60;/p&#62;</code>
+    </pre>
     <p>Another attribute you may want to add to your links is title; this is intended to contain supplementary useful information about the link, such as what kind of information the page contains, or things to be aware of. For example:</p>
+    <pre>
+      <code>    
+        &#60;p&#62;I'm creating a link to
+        &#60;a href="https://www.mozilla.org/en-US/"
+        title="The best place to find more information about Mozilla's
+        mission and how to contribute"&#62;the Mozilla homepage&#60;/a&#62;.
+        &#60;/p&#62;
+      </code>
+    </pre>
     <p>It's easy to throw links up on your page. That's not enough. We need to make our links accessible to all readers, regardless of their current context and which tools they prefer. For example:</p>
   </section>
 
@@ -27,6 +63,10 @@
     <header>HTML comments</header>
     <p>In HTML, as with most programming languages, there is a mechanism available to write comments in the code — comments are ignored by the browser and invisible to the user, and their purpose is to allow you to include comments in the code to say how your code works, what the different parts of the code do, etc. This can be very useful if you return to a code base that you've not worked on for six months, and can't remember what you did — or if you hand your code over to someone else to work on.</p>
     <p>To turn a section of content inside your HTML file into a comment, you need to wrap it in the special markers &#60;!-- and --&#62;, for example:</p>
+    <pre>
+      <code>&#60;p&#62;I'm not inside a comment&#60;/p&#62;
+      &#60;!-- &#60;p&#62;I am!&#60;/p&#62; --&#62;</code>
+    </pre>
     <p>As you can see below, the first paragraph appears in the live output, but the second one doesn't.</p>
   </section>
 
